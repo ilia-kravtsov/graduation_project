@@ -263,7 +263,6 @@
 .main__fourth-features-container {
   max-width: 1280px;
   width: 100%;
-  border: 1px solid brown;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,3 +276,152 @@
   width: 100%;
   text-align: center;
 }
+.main__fourth-features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px 32px;
+}
+.main__fourth-features-item {
+  background-color: $background-color-light;
+  padding: 48px 32px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  @include size(405px, 316px);
+}
+.main__fourth-features-item-icon {
+  margin-bottom: 22px;
+  width: 32px;
+}
+.main__fourth-features-item-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+/* =========================== main__fourth-features end =========================== */
+
+/* =========================== main__fifth start =========================== */
+
+.main__fifth {
+  background-color: $background-color-dark;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+}
+.main__fifth-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  gap: 110px; 
+}
+.main__fifth-left {
+  @include size(327px, 184px);
+}
+.main__fifth-header {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: $font-color-dark;
+}
+.main__fifth-text {
+  margin-top: 16px;
+}
+.main__fifth-right {
+  @include size(843px, 250px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main__fifth-quote {
+}
+.main__fifth-quote-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: $font-color-dark;
+}
+.main__fifth-quote-author {
+  @include size(240px, 70px);
+  color: $font-color-dark;
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0 14px;
+  align-items: center;
+}
+.main__fifth-quote-author-avatar-container {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.main__fifth-quote-author-avatar {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: 35% 30%;
+  transform: scale(1.1);
+}
+.main__fifth-quote-author-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $font-color-dark;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+.main__fifth-quote-author-position {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: $font-color-dark;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: start;
+}
+.main__fifth-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main__fifth-buttons-container img:hover {
+  filter: invert(100%);
+}
+.main__fifth-buttons-container-arrow-left,
+.main__fifth-buttons-container-arrow-right {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: $transition;
+}
+.main__fifth-buttons-container-arrow-right svg {
+  transform: rotate(180deg);
+}
+.main__fifth-buttons-container-arrow-left:hover,
+.main__fifth-buttons-container-arrow-right:hover {
+  background-color: $fill-color;
+}
+.main__fifth-buttons-container-arrow-left:hover svg path,
+.main__fifth-buttons-container-arrow-right:hover svg path {
+  fill: #FFFFFF;
+}
+.main__fifth-buttons-container-arrow-left:hover svg g,
+.main__fifth-buttons-container-arrow-right:hover svg g {
+  opacity: 1;
+}
+
+/* =========================== main__fifth end =========================== */
