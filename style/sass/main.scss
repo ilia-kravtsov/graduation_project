@@ -415,6 +415,10 @@
 .main__fifth-buttons-container-arrow-right:hover {
   background-color: $fill-color;
 }
+.main__fifth-buttons-container-arrow-left:focus,
+.main__fifth-buttons-container-arrow-right:focus {
+  background-color: $fill-color;
+}
 .main__fifth-buttons-container-arrow-left:hover svg path,
 .main__fifth-buttons-container-arrow-right:hover svg path {
   fill: #FFFFFF;
@@ -425,3 +429,103 @@
 }
 
 /* =========================== main__fifth end =========================== */
+
+/* =========================== main__sixth start =========================== */
+
+.main__sixth {
+  background-color: $background-color-light;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  color: $font-color-dark;
+}
+.main__sixth-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  gap: 110px; 
+}
+.main__sixth-left {
+  display: flex;
+  flex-direction: column;
+}
+.main__sixth-header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 56px;
+}
+.main__sixth-header-link {
+  margin-top: 16px;
+  color: $accent-link-color;
+}
+.main__sixth-right-list {
+  display: flex;
+  flex-direction: column;
+  @include size(843px, auto);
+}
+.main__sixth-right-list:first-child {
+  margin-top: 0;
+}
+.main__sixth-right-list-item {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid $border-bottom-color;
+  transition: $transition;
+}
+.main__sixth-right-list-item-open-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__sixth-right-list-item-number {
+  width: 24px;
+  height: 36px;
+  margin-left: 27px;
+}
+.main__sixth-right-list-item-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__sixth-right-list-item-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 60px;
+}
+.main__sixth-right-list-item-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 31px;
+  max-width: 642px;
+  width: 100%;
+  transition: max-height 0.3s, opacity 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+}
+.main__sixth-right-list-item-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all .4s;
+}
+.main__sixth-right-list-item-icon:hover {
+  transform: rotate(45deg);
+}
+.--accordion-active {
+  opacity: 1;
+  visibility: visible;
+  max-height: 62px;
+  margin: 16px 0 16px 110px;
+}
+.--accordion-icon-active {
+  transform: rotate(45deg);
+}
+
+/* =========================== main__sixth end =========================== */
