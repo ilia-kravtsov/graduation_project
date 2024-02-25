@@ -1651,6 +1651,346 @@ address {
 }
 
 /* =========================== main-about__third-processes ends =========================== */
+/* =========================== main-about__fourth-mission starts =========================== */
+.main-about__fourth-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: #EEF4FA;
+  color: #282938;
+}
+
+.main-about__fourth-mission-container {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 96px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.main-about__fourth-mission-top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 140px;
+}
+
+.main-about__fourth-mission-top-box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  max-width: 623px;
+  width: 100%;
+  min-height: auto;
+}
+
+.main-about__fourth-mission-top-box-pre-title {
+  font-weight: 500;
+}
+
+.main-about__fourth-mission-top-box-left-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+
+.main-about__fourth-mission-top-box-left-text {
+  opacity: 70%;
+}
+
+.main-about__fourth-mission-top-box-right {
+  max-width: 515px;
+  width: 100%;
+  min-height: 336px;
+}
+
+.main-about__fourth-mission-bottom-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-about__fourth-mission-bottom-box-left {
+  max-width: 514px;
+  width: 100%;
+  min-height: 334px;
+}
+
+.main-about__fourth-mission-bottom-box-right {
+  max-width: 623px;
+  width: 100%;
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.main-about__fourth-mission-bottom-box-pre-title {
+  font-weight: 500;
+}
+
+.main-about__fourth-mission-bottom-box-right-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+
+.main-about__fourth-mission-bottom-box-right-text {
+  opacity: 70%;
+}
+
+/* =========================== main-about__fourth-mission ends =========================== */
+/* =========================== main-about__fifth-benefits starts =========================== */
+.main-about__fifth-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: #FFFFFF;
+  color: #282938;
+}
+
+.main-about__fifth-benefits-container {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-about__fifth-benefits-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  max-width: 630px;
+  width: 100%;
+  min-height: 128px;
+}
+
+.main-about__fifth-benefits-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.main-about__fifth-benefits-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 32px 48px 48px;
+  background-color: #F4F6FC;
+}
+
+.main-about__fifth-benefits-list-item-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.main-about__fifth-benefits-list-item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 26px;
+}
+
+.main-about__fifth-benefits-list-item-text {
+  opacity: 70%;
+  margin-top: 12px;
+}
+
+.main-about__fifth-partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 90px;
+}
+
+.main-about__fifth-users-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-about__fifth-users-number {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+
+.main-about__fifth-users-title {
+  opacity: 70%;
+}
+
+.main-about__fifth-partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+
+.main-about__fifth-partners-list-item {
+  max-width: 137px;
+  width: 100%;
+  min-height: 32px;
+  opacity: 80%;
+}
+
+/* =========================== main-about__fifth-benefits ends =========================== */
+/* =========================== main-about__sixth-team starts =========================== */
+.main-about__sixth-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: #F4F6FC;
+  color: #282938;
+}
+
+.main-about__sixth-team-container {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-about__sixth-team-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.main-about__sixth-team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.main-about__sixth-team-list-item {
+  background-color: #FFFFFF;
+  padding: 48px 64px 32px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-about__sixth-team-list-item-image-container {
+  position: relative;
+}
+
+.main-about__sixth-team-list-item-image-gradient {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#5239FA));
+  background: linear-gradient(to bottom, transparent, #5239FA 100%);
+  top: 0;
+  border-radius: 50%;
+  max-width: 168px;
+  width: 100%;
+  min-height: 168px;
+}
+
+.main-about__sixth-team-list-item-image-social-list {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  bottom: 12px;
+  left: 55px;
+}
+
+.main-about__sixth-team-list-item-image-social-list-item-image {
+  width: 13px;
+  height: 13px;
+}
+
+.main-about__sixth-team-list-item-name {
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.main-about__sixth-team-list-item-position {
+  margin-top: 2px;
+  opacity: 70%;
+}
+
+/* =========================== main-about__sixth-team ends =========================== */
 body {
   font-family: Poppins;
   font-size: 16px;

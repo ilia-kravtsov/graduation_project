@@ -148,3 +148,213 @@
 }
 
 /* =========================== main-about__third-processes ends =========================== */
+
+/* =========================== main-about__fourth-mission starts =========================== */
+
+.main-about__fourth-mission {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: $background-color-accent;
+  color: $font-color-dark;
+}
+.main-about__fourth-mission-container {
+  @include container(96px, column);
+}
+.main-about__fourth-mission-top-box {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.main-about__fourth-mission-top-box-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include size(623px, auto);
+}
+.main-about__fourth-mission-top-box-pre-title {
+  font-weight: 500;
+}
+.main-about__fourth-mission-top-box-left-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-about__fourth-mission-top-box-left-text {
+  opacity: 70%;
+}
+.main-about__fourth-mission-top-box-right {
+  @include size(515px, 336px);
+}
+.main-about__fourth-mission-bottom-box {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+}
+.main-about__fourth-mission-bottom-box-left {
+  @include size(514px, 334px);
+}
+.main-about__fourth-mission-bottom-box-right {
+  @include size(623px, auto);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-about__fourth-mission-bottom-box-pre-title {
+  font-weight: 500;
+}
+.main-about__fourth-mission-bottom-box-right-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-about__fourth-mission-bottom-box-right-text {
+  opacity: 70%;
+}
+
+/* =========================== main-about__fourth-mission ends =========================== */
+
+/* =========================== main-about__fifth-benefits starts =========================== */
+
+.main-about__fifth-benefits {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: $background-color-light;
+  color: $font-color-dark;
+}
+.main-about__fifth-benefits-container {
+  @include container(48px, column, center);
+}
+.main-about__fifth-benefits-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  @include size(630px, 128px);
+}
+.main-about__fifth-benefits-list {
+  display: flex;
+  gap: 32px;
+}
+.main-about__fifth-benefits-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 32px 48px 48px;
+  background-color: $background-color-dark;
+}
+.main-about__fifth-benefits-list-item-icon {
+  width: 32px;
+  height: 32px;
+}
+.main-about__fifth-benefits-list-item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 26px;
+}
+.main-about__fifth-benefits-list-item-text {
+  opacity: 70%;
+  margin-top: 12px;
+}
+.main-about__fifth-partners-container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.main-about__fifth-users-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-about__fifth-users-number {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-about__fifth-users-title {
+  opacity: 70%;
+}
+.main-about__fifth-partners-list {
+  display: flex;
+  gap: 60px;
+}
+.main-about__fifth-partners-list-item {
+  @include size(137px, 32px);
+  opacity: 80%;
+}
+.main-about__fifth-partners-list-item-link {
+}
+.main-about__fifth-partners-list-item-image {
+}
+
+/* =========================== main-about__fifth-benefits ends =========================== */
+
+/* =========================== main-about__sixth-team starts =========================== */
+
+.main-about__sixth-team {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 128px 0;
+  background-color: $background-color-dark;
+  color: $font-color-dark;
+}
+.main-about__sixth-team-container {
+  @include container(48px, column, center);
+}
+.main-about__sixth-team-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+.main-about__sixth-team-list {
+  display: flex;
+  gap: 32px;
+}
+.main-about__sixth-team-list-item {
+  background-color: $background-color-light;
+  padding: 48px 64px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-about__sixth-team-list-item-image-container {
+  position: relative;
+}
+.main-about__sixth-team-list-item-image {
+}
+.main-about__sixth-team-list-item-image-gradient {
+  position: absolute;
+  background: linear-gradient(to bottom, transparent, #5239FA 100%);
+  top: 0;
+  border-radius: 50%;
+  @include size(168px, 168px);
+}
+.main-about__sixth-team-list-item-image-social-list {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  bottom: 12px;
+  left: 55px;
+}
+.main-about__sixth-team-list-item-image-social-list-item {
+}
+.main-about__sixth-team-list-item-image-social-list-item-link {
+}
+.main-about__sixth-team-list-item-image-social-list-item-image {
+  width: 13px;
+  height: 13px;
+}
+.main-about__sixth-team-list-item-name {
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.main-about__sixth-team-list-item-position {
+  margin-top: 2px;
+  opacity: 70%;
+}
+
+/* =========================== main-about__sixth-team ends =========================== */
