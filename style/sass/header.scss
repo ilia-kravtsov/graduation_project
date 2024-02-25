@@ -1,3 +1,6 @@
+@import './variables.scss';
+@import './mixins.scss';
+
 .header {
   width: 100%;
   display: flex;
@@ -7,7 +10,6 @@
   min-height: 92px;
   color: $font-color-links;
 }
-
 .header__container {
   max-width: 1280px;
   width: 100%;
@@ -16,17 +18,14 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .header__logo {
   max-height: 24.7px;
   max-width: 122px;
 }
-
 .header__logo img {
   max-height: 100%;
   max-width: 100%;
 }
-
 .header__nav {
   display: flex;
   justify-content: center;
@@ -35,14 +34,12 @@
   max-width: 700px;
   width: 100%;
 }
-
 .header__nav-list {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .header__nav-link--contact {
   max-width: 185px;
   width: 100%;
@@ -52,19 +49,16 @@
   border: 2px solid rgba(244, 246, 252, 0.2);
   border-radius: $border-radius;
 }
-
 .header__nav-item {
 
 }
-
 .header__nav-link {
+  color: $font-color-links;
   transition: $transition;
 }
-
 .header__nav-link:hover {
   color: $font-color-light;
 }
-
 .header__nav-link:focus {
   color: $font-color-light;
 }

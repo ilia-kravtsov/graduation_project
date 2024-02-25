@@ -3,3 +3,12 @@
   width: 100%;
   min-height: $height;
 }
+
+@mixin container($gap, $direction: row, $align: stretch) {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+}
