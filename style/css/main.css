@@ -24,7 +24,7 @@
   width: 100%;
   min-height: 414px;
   padding: 128px 0;
-  background-color: rgb(28, 30, 83);
+  background-color: #1c1e53;
 }
 
 .main__hero-container {
@@ -60,7 +60,7 @@
   font-size: 54px;
   font-weight: 600;
   line-height: 74px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .main__hero-text {
@@ -79,6 +79,10 @@
   margin-top: 48px;
 }
 
+.main__hero-btn {
+  text-align: center;
+}
+
 .button {
   max-width: 230px;
   width: 100%;
@@ -94,7 +98,7 @@
 }
 
 .main__hero-link {
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 500;
   margin: 18px 0 18px 40px;
 }
@@ -306,11 +310,11 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .main__third-content-cover-block-1-text {
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .main__third-content-right-container {
@@ -643,6 +647,10 @@
   color: #282938;
 }
 
+.main__sixth--padding-bottom-correcting {
+  padding-bottom: 0;
+}
+
 .main__sixth-container {
   max-width: 1280px;
   width: 100%;
@@ -806,7 +814,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .main__seventh-container {
@@ -943,14 +951,14 @@
 
 .main__seventh-right-form-link span {
   font-weight: 500;
-  color: #FFF;
+  color: #FFFFFF;
   margin-right: 16px;
   font-size: 18px;
   line-height: 32px;
 }
 
 .main__seventh-right-form-link path {
-  fill: #FFF;
+  fill: #FFFFFF;
 }
 
 /* =========================== main__seventh ends =========================== */

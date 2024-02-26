@@ -12,3 +12,13 @@
   gap: $gap;
   align-items: $align;
 }
+
+@mixin section($direction: row, $align: stretch, $background: $background-color-dark, $color: $font-color-dark, $padding: 128px 0) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  width: 100%;
+  background-color: $background;
+  color: $color;
+  padding: $padding;
+}

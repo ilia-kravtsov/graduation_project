@@ -12,7 +12,7 @@
   width: 100%;
   min-height: 414px;
   padding-top: 126px;
-  background-color: rgb(28, 30, 83);
+  background-color: #1c1e53;
 }
 
 .footer__container {
@@ -121,7 +121,7 @@
 }
 
 .footer__right-header {
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;

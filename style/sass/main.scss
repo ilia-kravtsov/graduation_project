@@ -43,7 +43,7 @@
   margin-top: 48px;
 }
 .main__hero-btn {
-
+  text-align: center;
 }
 .button {
   @include size(230px, 64px);
@@ -430,6 +430,9 @@
   width: 100%;
   padding: 128px 0;
   color: $font-color-dark;
+}
+.main__sixth--padding-bottom-correcting {
+  padding-bottom: 0;
 }
 .main__sixth-container {
   @include container(110px);

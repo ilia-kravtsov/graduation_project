@@ -9,7 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(28, 30, 83);
+  background-color: #1c1e53;
   min-height: 92px;
   color: #BBBBCB;
 }
@@ -84,9 +84,9 @@
 }
 
 .header__nav-link:hover {
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .header__nav-link:focus {
-  color: #FFF;
+  color: #FFFFFF;
 }
