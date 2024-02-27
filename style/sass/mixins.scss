@@ -13,7 +13,12 @@
   align-items: $align;
 }
 
-@mixin section($direction: row, $align: stretch, $background: $background-color-dark, $color: $font-color-dark, $padding: 128px 0) {
+@mixin section(
+$direction: row, 
+$align: stretch,
+$padding: 128px 0, 
+$background: $background-color-dark, 
+$color: $font-color-dark) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;

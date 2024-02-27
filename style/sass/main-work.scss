@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+/* ________________________________ main-work__hero starts ________________________________ */
+
+.main-work__hero {
+  @include section(column, center, 96px 0);
+}
+.main-work__hero-container {
+  @include container(0, column, center);
+}
+.main-work__hero-pre-title {
+  font-weight: 600;
+  opacity: $opacity;
+}
+.main-work__hero-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  margin-top: 4px;
+}
+.main-work__hero-text {
+  @include size(733px, auto);
+  font-weight: 500;
+  opacity: $opacity;
+  margin-top: 24px;
+}
+.main-work__hero-links-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 33px;
+}
+.main-work__hero-links-item {
+}
+.main-work__hero-links-link {
+}
+.main-work__hero-links-link-image {
+  width: 16px;
+  height: 16px;
+}
+
+/* ________________________________ main-work__hero ends ________________________________ */
+

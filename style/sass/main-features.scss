@@ -149,7 +149,6 @@
 .main-features__guarantee {
   @include section(column, center);
   background-color: rgba(252, 217, 128, 10%);
-  
 }
 .main-features__guarantee-container {
   @include container(80px, row, center);
