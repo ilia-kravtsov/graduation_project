@@ -5,9 +5,15 @@
 
 .main-work__hero {
   @include section(column, center, 96px 0);
+
 }
 .main-work__hero-container {
   @include container(0, column, center);
+}
+.main-work__hero-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-work__hero-pre-title {
   font-weight: 600;
@@ -24,6 +30,7 @@
   font-weight: 500;
   opacity: $opacity;
   margin-top: 24px;
+  text-align: center;
 }
 .main-work__hero-links-list {
   display: flex;
@@ -38,6 +45,29 @@
 .main-work__hero-links-link-image {
   width: 16px;
   height: 16px;
+}
+.main-work__hero-content {
+
+}
+.main-work__hero-content-buttons-list {
+}
+.main-work__hero-content-item {
+}
+.main-work__hero-content-item-button {
+}
+.main-work__hero-content-templates-list {
+}
+.main-work__hero-content-templates-item {
+}
+.main-work__hero-content-template-image-container {
+}
+.main-work__hero-content-template-image {
+}
+.main-work__hero-content-template-title {
+}
+.main-work__hero-content-template-text {
+}
+.main-work__hero-content-template-link {
 }
 
 /* ________________________________ main-work__hero ends ________________________________ */
