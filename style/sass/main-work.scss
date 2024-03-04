@@ -47,28 +47,112 @@
   height: 16px;
 }
 .main-work__hero-content {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+}
+.main-work__hero-content-container {
+  @include container (48px, column, center);
 }
 .main-work__hero-content-buttons-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 .main-work__hero-content-item {
+  
 }
 .main-work__hero-content-item-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: $font-color-dark;
+  opacity: $opacity;
+  background-color: transparent;
+}
+.--main-work__hero-content-buttons-list-active {
+  color: $accent-link-color;
+  opacity: 100%;
 }
 .main-work__hero-content-templates-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 64px;
 }
 .main-work__hero-content-templates-item {
 }
 .main-work__hero-content-template-image-container {
+  @include size(623px, 380px);
+  position: relative;
+}
+.--gradient-1 {
+  background-image: linear-gradient(to bottom right, #F4EDE1, #98B1C6);
+}
+.--gradient-2 {
+  background-image: linear-gradient(to bottom right, #FFD3AF, #4F56FF);
+}
+.--gradient-3 {
+  background-image: linear-gradient(to bottom right, #EEBCA7, #C8C8C8);
+}
+.--gradient-4 {
+  background-image: linear-gradient(to bottom right, #C2E7F2, #98A4FF);
+}
+.--gradient-5 {
+  background-image: linear-gradient(to bottom right, #C5BCFF, #9BF7D5);
+}
+.--gradient-6 {
+  background-image: linear-gradient(to bottom right, #D2D6FD, #D6ACEA);
 }
 .main-work__hero-content-template-image {
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .main-work__hero-content-template-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: $font-color-dark;
+  margin-top: 24px;
 }
 .main-work__hero-content-template-text {
+  opacity: $opacity;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .main-work__hero-content-template-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $font-color-dark;
+}
+.main-work__hero-content-template-link span {
+  margin-right: 16px;
+}
+.main-work__hero-content-template-link path {
+  fill: $font-color-dark;
+}
+.main-work__hero__bottom {
+  @include size(730px, auto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $font-color-dark;
+  margin: 128px 0;
+}
+.main-work__hero__bottom-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+.main-work__hero__bottom-text {
+  @include size(562px, auto);
+  font-weight: 500;
+  opacity: $opacity;
+  margin-top: 20px;
 }
 
-/* ________________________________ main-work__hero ends ________________________________ */
 
+/* ________________________________ main-work__hero ends ________________________________ */

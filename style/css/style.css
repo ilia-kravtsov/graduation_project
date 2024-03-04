@@ -2577,6 +2577,174 @@ address {
   height: 16px;
 }
 
+.main-work__hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 96px;
+}
+
+.main-work__hero-content-container {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-work__hero-content-buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+
+.main-work__hero-content-item-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #282938;
+  opacity: 70%;
+  background-color: transparent;
+}
+
+.--main-work__hero-content-buttons-list-active {
+  color: #2405F2;
+  opacity: 100%;
+}
+
+.main-work__hero-content-templates-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 64px;
+}
+
+.main-work__hero-content-template-image-container {
+  max-width: 623px;
+  width: 100%;
+  min-height: 380px;
+  position: relative;
+}
+
+.--gradient-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#F4EDE1), to(#98B1C6));
+  background-image: linear-gradient(to bottom right, #F4EDE1, #98B1C6);
+}
+
+.--gradient-2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFD3AF), to(#4F56FF));
+  background-image: linear-gradient(to bottom right, #FFD3AF, #4F56FF);
+}
+
+.--gradient-3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#EEBCA7), to(#C8C8C8));
+  background-image: linear-gradient(to bottom right, #EEBCA7, #C8C8C8);
+}
+
+.--gradient-4 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#C2E7F2), to(#98A4FF));
+  background-image: linear-gradient(to bottom right, #C2E7F2, #98A4FF);
+}
+
+.--gradient-5 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#C5BCFF), to(#9BF7D5));
+  background-image: linear-gradient(to bottom right, #C5BCFF, #9BF7D5);
+}
+
+.--gradient-6 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D2D6FD), to(#D6ACEA));
+  background-image: linear-gradient(to bottom right, #D2D6FD, #D6ACEA);
+}
+
+.main-work__hero-content-template-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-work__hero-content-template-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+  margin-top: 24px;
+}
+
+.main-work__hero-content-template-text {
+  opacity: 70%;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.main-work__hero-content-template-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #282938;
+}
+
+.main-work__hero-content-template-link span {
+  margin-right: 16px;
+}
+
+.main-work__hero-content-template-link path {
+  fill: #282938;
+}
+
+.main-work__hero__bottom {
+  max-width: 730px;
+  width: 100%;
+  min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #282938;
+  margin: 128px 0;
+}
+
+.main-work__hero__bottom-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.main-work__hero__bottom-text {
+  max-width: 562px;
+  width: 100%;
+  min-height: auto;
+  font-weight: 500;
+  opacity: 70%;
+  margin-top: 20px;
+}
+
 /* ________________________________ main-work__hero ends ________________________________ */
 body {
   font-family: Poppins;
