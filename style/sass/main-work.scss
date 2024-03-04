@@ -105,10 +105,7 @@
   background-image: linear-gradient(to bottom right, #D2D6FD, #D6ACEA);
 }
 .main-work__hero-content-template-image {
-  position: absolute; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  @include align-image();
 }
 .main-work__hero-content-template-title {
   font-weight: 600;
