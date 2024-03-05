@@ -7,7 +7,6 @@
 }
 .main__read-case-studies-hero {
   @include container(0, column, center);
-  color: $font-color-dark;
 }
 .main__read-case-studies-hero-title-container {
   @include size(1064px, auto);

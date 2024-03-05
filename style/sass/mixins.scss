@@ -1,18 +1,3 @@
-@mixin size ($width, $height) {
-  max-width: $width;
-  width: 100%;
-  min-height: $height;
-}
-
-@mixin container($gap, $direction: row, $align: stretch) {
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-  flex-direction: $direction;
-  gap: $gap;
-  align-items: $align;
-}
-
 @mixin section(
 $direction: row, 
 $align: stretch,
@@ -28,9 +13,24 @@ $color: $font-color-dark) {
   padding: $padding;
 }
 
+@mixin container($gap, $direction: row, $align: stretch) {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+}
+
 @mixin align-image() {
   position: absolute; 
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+
+@mixin size ($width, $height) {
+  max-width: $width;
+  width: 100%;
+  min-height: $height;
 }
