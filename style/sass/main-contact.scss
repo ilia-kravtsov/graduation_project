@@ -2,8 +2,7 @@
 @import 'mixins';
 
 .main-contact {
-  @include section(column, center);
-  background-color: $background-color-light;
+  @include section(column, center, 128px 0, $background-color-light);
 }
 .main-contact__container {
   @include container(0, column, center);
