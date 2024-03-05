@@ -14,19 +14,6 @@
   line-height: 64px;
   text-align: center;
 }
-.main__blog-page-name-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 16px;
-}
-.main__blog-page-name {
-  font-weight: 500;
-  opacity: 87%;
-}
-.main__blog-page-date {
-  font-weight: 500;
-}
 .main__blog-page-image-container {
   @include size(1280px, 477px);
   margin-top: 32px;

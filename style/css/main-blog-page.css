@@ -41,26 +41,6 @@
   text-align: center;
 }
 
-.main__blog-page-name-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 6px;
-  margin-top: 16px;
-}
-
-.main__blog-page-name {
-  font-weight: 500;
-  opacity: 87%;
-}
-
-.main__blog-page-date {
-  font-weight: 500;
-}
-
 .main__blog-page-image-container {
   max-width: 1280px;
   width: 100%;

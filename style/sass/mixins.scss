@@ -3,7 +3,9 @@ $direction: row,
 $align: stretch,
 $padding: 128px 0, 
 $background: $background-color-dark, 
-$color: $font-color-dark) {
+$color: $font-color-dark
+) 
+{
   display: flex;
   flex-direction: $direction;
   align-items: $align;
@@ -13,7 +15,12 @@ $color: $font-color-dark) {
   padding: $padding;
 }
 
-@mixin container($gap, $direction: row, $align: stretch) {
+@mixin container(
+  $gap, 
+  $direction: row, 
+  $align: stretch
+) 
+{
   max-width: 1280px;
   width: 100%;
   display: flex;
@@ -22,15 +29,31 @@ $color: $font-color-dark) {
   align-items: $align;
 }
 
-@mixin align-image() {
+@mixin align-image {
   position: absolute; 
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
 }
 
-@mixin size ($width, $height) {
+@mixin size (
+  $width, $height
+) 
+{
   max-width: $width;
   width: 100%;
   min-height: $height;
+}
+
+@mixin title (
+  $font-size: 48px, 
+  $line-height: 64px,
+  $align: center,
+  $font-weight: 600, 
+) 
+{
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $align;
 }
