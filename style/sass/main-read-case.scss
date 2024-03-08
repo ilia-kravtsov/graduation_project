@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .main__read-case-studies {
-  @include section(column, center);
+  @include section(column, center, 128px 0, $background-color-light);
   padding-bottom: 0;
 }
 .main__read-case-studies-hero {

@@ -4,7 +4,6 @@
 /* ________________________________ main-work__hero starts ________________________________ */
 .main-work__hero {
   @include section(column, center, 96px 0);
-
 }
 .main-work__hero-container {
   @include container(0, column, center);
@@ -46,10 +45,7 @@
   height: 16px;
 }
 .main-work__hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 96px;
+  @include section(column, center, 96px 0, $background-color-light);
 }
 .main-work__hero-content-container {
   @include container (48px, column, center);
@@ -130,13 +126,12 @@
   fill: $font-color-dark;
 }
 .main-work__hero__bottom {
-  @include size(730px, auto);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include section(column, center, 128px 0, $background-color-light, $font-color-dark);
   text-align: center;
-  color: $font-color-dark;
-  margin: 128px 0;
+}
+.main-work__hero__bottom-container {
+  @include container(0, column, center);
+  @include size(730px, auto);
 }
 .main-work__hero__bottom-title {
   font-weight: 600;
@@ -149,6 +144,7 @@
   opacity: $opacity;
   margin-top: 20px;
 }
+
 
 
 /* ________________________________ main-work__hero ends ________________________________ */
