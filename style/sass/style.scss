@@ -13,11 +13,38 @@
 @import 'main-contact.scss';
 @import 'main-privacy.scss';
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: Poppins;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
 }
+
+/* Для WebKit-браузеров Safari, Chrome... */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина скролла */
+}
+
+::-webkit-scrollbar-track {
+  background-color: $background-color-dark; /* Цвет фона трека скролла */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent-color-dark; /* Цвет ползунка скролла */
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin; /* Толщина скролла */
+  scrollbar-color: $accent-color-dark $background-color-dark; /* Цвет ползунка и трека скролла */
+}
+
+
+
 
 

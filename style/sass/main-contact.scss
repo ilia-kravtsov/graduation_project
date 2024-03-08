@@ -32,6 +32,9 @@
   border: 1px solid rgba(0, 0, 0, 12%);
   border-radius: 8px;
   padding: 18px 32px;
+  color: $font-color-dark-2;
+  font-size: 16px;
+  font-weight: 500;
 }
 .main-contact__form input::placeholder,
 .main-contact__form textarea::placeholder {

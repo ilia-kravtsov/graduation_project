@@ -541,24 +541,38 @@
 }
 
 .main-about__sixth-team-list-item-image-gradient {
+  opacity: 0;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#5239FA));
   background: linear-gradient(to bottom, transparent, #5239FA 100%);
   top: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   max-width: 168px;
   width: 100%;
   min-height: 168px;
 }
 
 .main-about__sixth-team-list-item-image-social-list {
-  position: absolute;
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
   gap: 12px;
   bottom: 12px;
   left: 55px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.main-about__sixth-team-list-item-image-container:hover .main-about__sixth-team-list-item-image-gradient {
+  opacity: 1;
+}
+
+.main-about__sixth-team-list-item-image-container:hover .main-about__sixth-team-list-item-image-social-list {
+  opacity: 1;
 }
 
 .main-about__sixth-team-list-item-image-social-list-item-image {

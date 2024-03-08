@@ -1,3 +1,4 @@
+// ____________________________ аккордеон __________________________________________________________________
 // ____________________________ один открыт, остальные закрываются _________________________________________
 // Выбираю все иконки
 const accordionIcons = document.querySelectorAll('.main__sixth-right-list-item-icon');
@@ -14,13 +15,13 @@ accordionIcons.forEach((icon, index) => {
     // Нахожу ближайший родительский элемент
     const listItem = e.target.closest('.main__sixth-right-list-item');
 
-    // Нахожуж текст в этом родительском элементе
+    // Нахожу текст в этом родительском элементе
     const textContent = listItem.querySelector('.main__sixth-right-list-item-text');
 
-    // Проверяю открыт ли уже какой-либо другой аккордион
+    // Проверяю открыт ли уже какой-либо другой аккордeон
     const isOpen = textContent.classList.contains('--accordion-active');
 
-    // Закрываю все аккордионы
+    // Закрываю все аккордeоны
     accordionTexts.forEach(text => {
       text.classList.remove('--accordion-active');
     });
@@ -30,7 +31,7 @@ accordionIcons.forEach((icon, index) => {
       indicator.classList.remove('--accordion-icon-active');
     });
 
-    // Открываю текущий аккордион если он был закрыт
+    // Открываю текущий аккордеон если он был закрыт
     if (!isOpen) {
       textContent.classList.add('--accordion-active');
       icon.classList.add('--accordion-icon-active');
@@ -63,6 +64,22 @@ accordionIcons.forEach((icon, index) => {
 //   });
 // });
 
+// ________________________________ swiper _____________________________
+const swiper = new Swiper('.main__fifth-quote', {
+  loop: true,
 
+  navigation: {
+    nextEl: '.main__fifth-buttons-container-arrow-right',
+    prevEl: '.main__fifth-buttons-container-arrow-left',
+  },
 
-
+});
+// ________________________________ preventing form top scrolling after clicking the button _____________________________
+const forms = document.querySelectorAll('form');
+forms.forEach(function(form) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    this.reset();
+  });
+});
+// ________________________________ clearing the data from form inputs after clicking the button _____________________________
