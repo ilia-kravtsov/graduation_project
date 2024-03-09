@@ -2,21 +2,16 @@
 @import './mixins.scss';
 
 .header {
-  width: 100%;
+  @include size(100%, 92px);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $accent-color-dark;
-  min-height: 92px;
   color: $font-color-links;
+  padding: 0 20px;
 }
 .header__container {
-  max-width: 1280px;
-  width: 100%;
-  min-height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include container(0, row, center, space-between);
 }
 .header__logo {
   max-height: 24.7px;
@@ -27,38 +22,106 @@
   max-width: 100%;
 }
 .header__nav {
+  @include size(700px, auto);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: inherit;
-  max-width: 700px;
-  width: 100%;
 }
 .header__nav-list {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  transition: $transition;
 }
+/* =========================== burger starts ========================== */
+.burger-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-color: transparent;
+}
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: $background-color-dark;
+    transition: $transition;
+    cursor: pointer;
+}
+.burger-icon span {
+  position: relative;
+}
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+  content: '';
+}
+.burger-icon span::before {
+  top: -8px;
+}
+.burger-icon span::after {
+  bottom: -8px;
+}
+/* =========================== burger ends ========================== */
 .header__nav-link--contact {
-  max-width: 185px;
-  width: 100%;
-  max-height: 60px;
-  height: 100%;
+  @include size(185px, 60px);
   padding: 16px 48px;
   border: 2px solid rgba(244, 246, 252, 0.2);
   border-radius: $border-radius;
 }
-.header__nav-item {
-
-}
 .header__nav-link {
   color: $font-color-links;
-  transition: $transition;
+  transition: color .4s;
 }
 .header__nav-link:hover {
   color: $font-color-light;
 }
-.header__nav-link:focus {
+.header__nav-link_accent-color {
   color: $font-color-light;
 }
+/* =========================== media starts ========================== */
+@media (max-width: 900px) {
+  .header__nav-list {
+    position: absolute;
+    inset: 0;
+    background-color: $accent-color-dark;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50%);
+  }
+  .burger-icon { 
+    display: block;
+  }
+  .header__nav {
+    padding-right: 20px;
+  }
+}
+/* =========================== menu opener ========================== */
+.menu_opener .burger-icon span {
+  background-color: transparent;
+}
+.menu_opener .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.menu_opener .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.header__nav-list_mobile {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+

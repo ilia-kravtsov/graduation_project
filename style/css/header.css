@@ -1,5 +1,7 @@
 .header {
+  max-width: 100%;
   width: 100%;
+  min-height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,17 +12,21 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #1c1e53;
-  min-height: 92px;
   color: #BBBBCB;
+  padding: 0 20px;
 }
 
 .header__container {
   max-width: 1280px;
   width: 100%;
-  min-height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -40,6 +46,9 @@
 }
 
 .header__nav {
+  max-width: 700px;
+  width: 100%;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,9 +58,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: inherit;
-  max-width: 700px;
-  width: 100%;
 }
 
 .header__nav-list {
@@ -65,13 +71,61 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
+/* =========================== burger starts ========================== */
+.burger-icon {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #F4F6FC;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+  content: "";
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+/* =========================== burger ends ========================== */
 .header__nav-link--contact {
   max-width: 185px;
   width: 100%;
-  max-height: 60px;
-  height: 100%;
+  min-height: 60px;
   padding: 16px 48px;
   border: 2px solid rgba(244, 246, 252, 0.2);
   border-radius: 41px;
@@ -79,14 +133,69 @@
 
 .header__nav-link {
   color: #BBBBCB;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
 }
 
 .header__nav-link:hover {
   color: #FFFFFF;
 }
 
-.header__nav-link:focus {
+.header__nav-link_accent-color {
   color: #FFFFFF;
+}
+
+/* =========================== media starts ========================== */
+@media (max-width: 900px) {
+  .header__nav-list {
+    position: absolute;
+    inset: 0;
+    background-color: #1c1e53;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5vh;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .burger-icon {
+    display: block;
+  }
+  .header__nav {
+    padding-right: 20px;
+  }
+}
+/* =========================== menu opener ========================== */
+.menu_opener .burger-icon span {
+  background-color: transparent;
+}
+
+.menu_opener .burger-icon span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu_opener .burger-icon span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header__nav-list_mobile {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }

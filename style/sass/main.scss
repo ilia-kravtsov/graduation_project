@@ -11,10 +11,9 @@
 
 /* =========================== main__hero starts =========================== */
 .main__hero {
+  @include size(100%, 414px);
   display: flex;
   justify-content: center;
-  width: 100%;
-  min-height: 414px;
   padding: 128px 0;
   background-color: $accent-color-dark;
 }
@@ -103,8 +102,6 @@
 .main__second-left-text {
   color: $font-color-dark;
 }
-.main__second-left-link {
-}
 .main__second-left-link span {
   color: #2405F2;
   font-weight: 500;
@@ -119,10 +116,6 @@
   @include size(656px, 405px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.main__second-right-item {
-}
-.main__second-right-item-image {
 }
 .main__second-right-item-header {
   color: $font-color-dark;

@@ -18,7 +18,8 @@ $color: $font-color-dark
 @mixin container(
   $gap, 
   $direction: row, 
-  $align: stretch
+  $align: stretch,
+  $justify: initial
 ) 
 {
   max-width: 1280px;
@@ -27,6 +28,7 @@ $color: $font-color-dark
   flex-direction: $direction;
   gap: $gap;
   align-items: $align;
+  justify-content: $justify;
 }
 
 @mixin align-image {
@@ -47,9 +49,9 @@ $color: $font-color-dark
 
 @mixin title (
   $font-size: 48px, 
+  $font-weight: 600, 
   $line-height: 64px,
   $align: center,
-  $font-weight: 600, 
 ) 
 {
   font-weight: $font-weight;
