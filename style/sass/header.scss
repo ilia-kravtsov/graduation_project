@@ -12,6 +12,7 @@
 }
 .header__container {
   @include container(0, row, center, space-between);
+  position: relative;
 }
 .header__logo {
   max-height: 24.7px;
@@ -51,7 +52,7 @@
     height: 3px;
     border-radius: 100px;
     background-color: $background-color-dark;
-    transition: $transition;
+    transition: all .3s;
     cursor: pointer;
 }
 .burger-icon span {
@@ -88,7 +89,7 @@
 /* =========================== media starts ========================== */
 @media (max-width: 900px) {
   .header__nav-list {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: $accent-color-dark;
     flex-direction: column;
@@ -101,6 +102,9 @@
   }
   .burger-icon { 
     display: block;
+    position: fixed;
+    right: 30px;
+    top: 40px;
   }
   .header__nav {
     padding-right: 20px;

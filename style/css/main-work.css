@@ -14,6 +14,9 @@
   background-color: #F4F6FC;
   color: #282938;
   padding: 96px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-work__hero-container {
@@ -101,6 +104,9 @@
   background-color: #FFFFFF;
   color: #282938;
   padding: 96px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-work__hero-content-container {
@@ -241,6 +247,9 @@
   background-color: #FFFFFF;
   color: #282938;
   padding: 128px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   text-align: center;
 }
 

@@ -33,6 +33,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .header__logo {
@@ -98,8 +99,8 @@
   height: 3px;
   border-radius: 100px;
   background-color: #F4F6FC;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -148,7 +149,7 @@
 /* =========================== media starts ========================== */
 @media (max-width: 900px) {
   .header__nav-list {
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: #1c1e53;
     -webkit-box-orient: vertical;
@@ -168,6 +169,9 @@
   }
   .burger-icon {
     display: block;
+    position: fixed;
+    right: 30px;
+    top: 40px;
   }
   .header__nav {
     padding-right: 20px;

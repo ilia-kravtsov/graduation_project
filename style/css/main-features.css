@@ -196,6 +196,9 @@
   background-color: #F4F6FC;
   color: #282938;
   padding: 128px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-features__support-container {
@@ -267,6 +270,9 @@
   background-color: #F4F6FC;
   color: #282938;
   padding: 128px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   background-color: rgba(252, 217, 128, 0.1);
 }
 

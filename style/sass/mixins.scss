@@ -3,7 +3,8 @@ $direction: row,
 $align: stretch,
 $padding: 128px 0, 
 $background: $background-color-dark, 
-$color: $font-color-dark
+$color: $font-color-dark,
+$justify: initial
 ) 
 {
   display: flex;
@@ -13,6 +14,7 @@ $color: $font-color-dark
   background-color: $background;
   color: $color;
   padding: $padding;
+  justify-content: $justify;
 }
 
 @mixin container(

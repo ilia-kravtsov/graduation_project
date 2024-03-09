@@ -13,6 +13,9 @@
   background-color: #FFFFFF;
   color: #282938;
   padding: 128px 0;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-privacy__container {
