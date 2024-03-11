@@ -18,7 +18,7 @@ $justify: initial
 }
 
 @mixin container(
-  $gap, 
+  $gap: 0, 
   $direction: row, 
   $align: stretch,
   $justify: initial
