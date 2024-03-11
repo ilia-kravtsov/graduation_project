@@ -289,7 +289,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 20px;
 }
 .main__fifth-container {
   @include container(110px);
@@ -702,6 +702,26 @@
   .main__third-content-right-container {
     flex-direction: row;
   }
+
+  /* fifth */
+  .main__fifth {
+    padding: 60px 20px;
+  }
+  .main__fifth-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .main__fifth-left {
+    @include size(843px, auto);
+    text-align: center;
+  }
+  .main__fifth-quote-author {
+    margin-top: 20px;
+  }
+  .main__fifth-buttons-container {
+    min-height: auto;
+  }
 }
 @media (max-width: 1200px) {
   /* hero */
@@ -780,6 +800,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  /* fifth */
+  .main__fifth-quote-text {
+    text-align: center;
+  }
+  .main__fifth-buttons-container {
+    left: 80%;
+    bottom: 22%;
+  }
 }
 @media (max-width: 800px) {
   /* third */
@@ -822,6 +851,20 @@
   }
   .main__fourth-features {
     padding: 40px 10px;
+  }
+
+  /* fifth */
+  .main__fifth-buttons-container {
+    left: 70%;
+  }
+  .main__fifth-quote-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  .main__fifth-buttons-container {
+    left: 70%;
+    bottom: 22%;
   }
 }
 @media (max-width: 600px) {
@@ -905,6 +948,21 @@
   .main__fourth-features-item {
     min-height: auto;
   }
+
+  /* fifth */
+  .main__fifth-buttons-container {
+    left: 60%;
+    bottom: 17%;
+  }
+  .main__fifth {
+    padding: 40px 10px;
+  }
+  .main__fifth-header {
+    font-size: 30px;
+  }
+  .main__fifth-container {
+    gap: 30px;
+  }
 }
 @media (max-width: 400px) {
   .main__hero-right {
@@ -943,6 +1001,22 @@
   }
   .main__fourth-features-item-header {
     font-size: 16px;
+  }
+  /* fifth */
+  .main__fifth-buttons-container {
+    left: 60%;
+    bottom: 17%;
+  }
+  .main__fifth-buttons-container {
+    left: 32%;
+    bottom: 45%;
+  }
+  .main__fifth-quote-author {
+    margin-top: 20px;
+  }
+  .main__fifth-quote-text {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 @media (max-width: 350px) {
@@ -989,5 +1063,14 @@
     }
     .main__third-content-main-image-1 {
       font-size: 12px;
+    }
+
+    /* fifth */
+    .main__fifth-quote-author {
+      margin-top: 50px;
+    }
+    .main__fifth-buttons-container {
+      left: 29%;
+      bottom: 42%;
     }
 }
