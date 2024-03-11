@@ -745,20 +745,23 @@
 /* =========================== main__fifth ends =========================== */
 /* =========================== main__sixth starts =========================== */
 .main__sixth {
-  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: #282938;
+  padding: 128px 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  padding: 128px 0;
-  color: #282938;
-}
-
-.main__sixth--padding-bottom-correcting {
-  padding-bottom: 0;
 }
 
 .main__sixth-container {
@@ -904,7 +907,7 @@
 }
 
 .--accordion-active {
-  opacity: 1;
+  opacity: 87%;
   visibility: visible;
   max-height: 62px;
   margin: 16px 0 16px 110px;
@@ -1235,6 +1238,20 @@
   .main__second-container {
     gap: 3vw;
   }
+  /* sixth */
+  .main__sixth {
+    padding: 60px 20px;
+  }
+  .main__sixth-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
 }
 @media (max-width: 1000px) {
   /* hero */
@@ -1342,6 +1359,13 @@
     max-width: 50%;
     padding-top: 112px;
   }
+  /* sixth */
+  .main__sixth-right-list-item-text {
+    max-width: 542px;
+  }
+  .--accordion-active {
+    max-height: 90px;
+  }
 }
 @media (max-width: 700px) {
   /* third */
@@ -1391,6 +1415,37 @@
     left: 70%;
     bottom: 22%;
   }
+  /* sixth */
+  .main__sixth-container {
+    gap: 20px;
+  }
+  .main__sixth-header {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 52px;
+  }
+  .main__sixth-right-list-item {
+    margin-top: 17px;
+  }
+  .main__sixth-right-list-item-text {
+    margin-top: 17px;
+    max-width: 442px;
+  }
+  .main__sixth-right-list-item-header {
+    font-size: 18px;
+    line-height: 36px;
+    margin-left: 20px;
+  }
+  .main__sixth-left {
+    text-align: center;
+  }
+  .--accordion-active {
+    margin: 12px 0 12px 61px;
+    font-size: 16px;
+  }
+  .main__sixth-right-list-item-number {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 600px) {
   .main__third-content-cover-block-1 {
@@ -1415,6 +1470,26 @@
   }
   .main__fourth-features-item-text {
     text-align: center;
+  }
+  /* sixth */
+  .main__sixth {
+    padding: 40px 10px;
+  }
+  .main__sixth-right-list-item-header {
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 20px;
+  }
+  .main__sixth-right-list-item-text {
+    font-size: 14px;
+  }
+  .main__sixth-right-list-item-text {
+    max-width: 342px;
+  }
+  .main__sixth-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
   }
 }
 @media (max-width: 500px) {
@@ -1495,6 +1570,26 @@
   .main__fifth-container {
     gap: 30px;
   }
+  /* sixth */
+  .main__sixth-right-list-item-header {
+    font-size: 14px;
+  }
+  .main__sixth-right-list-item {
+    margin-top: 10px;
+  }
+  .main__sixth-right-list-item-text {
+    margin-top: 10px;
+    max-width: 342px;
+  }
+  .main__sixth-right-list-item-number {
+    margin-left: 10px;
+  }
+  .main__sixth-right-list-item-header {
+    margin-left: 10px;
+  }
+  .--accordion-active {
+    margin: 12px 0 12px 41px;
+  }
 }
 @media (max-width: 400px) {
   .main__hero-right {
@@ -1547,6 +1642,29 @@
     font-size: 16px;
     line-height: 28px;
   }
+  /* sixth */
+  .main__sixth-right-list-item-number {
+    width: 20px;
+    height: 32px;
+  }
+  .--one {
+    width: 16px;
+    height: 14px;
+  }
+  .main__sixth-right-list-item-icon {
+    width: 12px;
+    height: 12px;
+  }
+  .main__sixth-right-list-item-header {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .main__sixth-right-list-item-text {
+    max-width: 250px;
+  }
+  .--accordion-active {
+    max-height: 120px;
+  }
 }
 @media (max-width: 350px) {
   .main__hero-header {
@@ -1574,6 +1692,12 @@
   .main__fourth-features-header {
     font-size: 24px;
     line-height: 34px;
+  }
+  .main__sixth-right-list-item-text {
+    max-width: 200px;
+  }
+  .--accordion-active {
+    max-height: 160px;
   }
 }
 @media (max-width: 300px) {
