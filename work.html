@@ -10,40 +10,45 @@
     <link rel="stylesheet" href="./style/css/style.min.css">
     <title>&#125;Finsweet</title>
 </head>
-<body>
+<body class="page">
 
-  <header class="header">
-    <div class="header__container">
-        <div class="header__logo">
-            <img src="./assets/images/Logo-1.svg" alt="logo">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./assets/images/Logo-1.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link header__nav-link_accent-color">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">About us</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="features.html" class="header__nav-link">Features</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="pricing.html" class="header__nav-link">Pricing</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="index.html#faq" class="header__nav-link">FAQ</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="blog-page.html" class="header__nav-link">Blog</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact-us.html" class="header__nav-link header__nav-link--contact">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-icon">
+                <span></span>
+            </div>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a href="index.html" class="header__nav-link">Home</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="about.html" class="header__nav-link">About us</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="features.html" class="header__nav-link">Features</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="pricing.html" class="header__nav-link">Pricing</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#faq" class="header__nav-link">FAQ</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="blog-page.html" class="header__nav-link">Blog</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="contact-us.html" class="header__nav-link header__nav-link--contact">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-  </header>
+    </header>
 
   <main class="main-work">
 
@@ -306,5 +311,6 @@
         </div>
   </footer>
   <script src="./js/work.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </body>
 </html>
