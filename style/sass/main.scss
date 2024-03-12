@@ -249,18 +249,24 @@
   @include section(row, stretch, 128px 20px, $background-color-dark, $font-color-dark, center);
 }
 .main__fourth-features-container {
-  @include container(47px, column, center);
+  @include container(0, column, center);
+}
+.main__fourth-features-pre-header {
+  font-weight: 500;
+  color: $font-color-dark;
 }
 .main__fourth-features-header {
   @include size(630px, auto);
   @include title();
   text-align: center;
+  margin-top: 12px;
 }
 .main__fourth-features-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 24px 32px;
+  margin-top: 47px;
 }
 .main__fourth-features-item {
   background-color: $background-color-light;
@@ -627,12 +633,7 @@
 /* =========================== main__eight starts =========================== */
 
 .main__eight-our-blog {
-  background-color: $background-color-light;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: $font-color-dark;
-  padding: 128px 0;
+  @include section(row, stretch, 128px 20px, $background-color-light, $font-color-dark, center);
 }
 .main__eight-our-blog-container {
   @include container(0, column)
@@ -642,18 +643,28 @@
   font-weight: 600;
   line-height: 64px;
 }
+.main__eight-our-blog-list-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  position: relative;
+}
 .main__eight-our-blog-list {
   display: flex;
   gap: 32px;
   margin-top: 64px;
 }
 .main__eight-our-blog-list-item {
+  @include size(405px, auto);
   display: flex;
   flex-direction: column;
 }
 .main__eight-our-blog-list-item-image-container {
+  max-width: 405px;
 }
 .main__eight-our-blog-list-item-image {
+  max-width: 100%;
 }
 .main__eight-our-blog-list-item-date {
   margin-top: 40px;
@@ -834,6 +845,24 @@
   }
   .main__seventh-right {
     @include size(656px, 691px);
+  }
+
+  /* eighth */
+  .main__eight-our-blog-header {
+    text-align: center;
+  }
+  .main__eight-our-blog-list {
+    gap: 8px;
+  }
+  .main__eight-our-blog-list-item-sub-header {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .main__eight-our-blog-list-item-text {
+    font-size: 14px;
+  }
+  .main__eight-our-blog {
+    padding: 60px 10px;
   }
 }
 @media (max-width: 800px) {
@@ -1049,8 +1078,8 @@
     font-size: 30px;
     line-height: 44px;
   }
-  .main__fourth-features-container {
-    gap: 30px;
+  .main__fourth-features-list {
+    margin-top: 37px;
   }
   .main__fourth-features-item {
     min-height: auto;
@@ -1241,6 +1270,11 @@
   .main__seventh-right-form-link span {
     font-size: 16px;
     margin-right: 12px;
+  }
+
+  /* eight */
+  .main__eight-our-blog {
+    padding: 30px 10px;
   }
 }
 @media (max-width: 300px) {
