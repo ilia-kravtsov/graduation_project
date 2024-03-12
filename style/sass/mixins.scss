@@ -40,10 +40,7 @@ $justify: initial
   transform: translate(-50%,-50%);
 }
 
-@mixin size (
-  $width, $height
-) 
-{
+@mixin size ($width, $height) {
   max-width: $width;
   width: 100%;
   min-height: $height;
