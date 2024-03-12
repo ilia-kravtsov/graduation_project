@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 20px 0 20px;
   background-color: $background-color-light;
   color: $font-color-dark;
 }
@@ -42,8 +42,11 @@
   opacity: 70%;
 }
 .main-about__hero-content-right-image-container {
+  @include size(547px, 336px);
 }
 .main-about__hero-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* =========================== main-about__hero ends =========================== */
@@ -369,3 +372,41 @@
 }
 
 /* =========================== main-about__sixth-team ends =========================== */
+
+@media (max-width: 1100px) {
+  .main-about__hero-container {
+    gap: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-about__hero-title {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-about__hero {
+    padding-top: 60px;
+  }
+  .main-about__hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-about__hero-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main-about__hero {
+    padding: 60px 10px 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-about__hero-title {
+    font-size: 32px;
+    line-height: 54px;
+  }
+}

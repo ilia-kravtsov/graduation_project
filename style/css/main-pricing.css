@@ -70,7 +70,7 @@
   max-width: 406px;
   width: 100%;
   min-height: 745px;
-  background-color: #F4F6FC;
+  background-color: #f4f6fc;
   border-radius: 12px;
   padding: 64px 76px 62px 48px;
 }
@@ -170,7 +170,7 @@
   line-height: 32px;
   font-size: 18px;
   font-family: Manrope;
-  color: #F4F6FC;
+  color: #f4f6fc;
 }
 
 .main-pricing__item-link-button-title--accent {

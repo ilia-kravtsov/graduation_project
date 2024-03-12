@@ -57,7 +57,7 @@
   max-width: 1061px;
   width: 100%;
   min-height: 640px;
-  background-color: #F4F6FC;
+  background-color: #f4f6fc;
   padding: 55px 77px 69px 55px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -169,7 +169,7 @@
   min-height: 64px;
   background-color: #282938;
   padding: 16px 62.5px;
-  color: #F4F6FC;
+  color: #f4f6fc;
   border-radius: 41px;
   font-family: Manrope;
   font-size: 18px;

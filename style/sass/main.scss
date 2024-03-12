@@ -33,6 +33,7 @@
   max-width: 562px;
   width: 100%;
   margin-top: 24px;
+  opacity: $opacity;
 }
 .main__hero-links-container {
   display: flex;
@@ -246,7 +247,7 @@
 /* =========================== main__fourth-features starts =========================== */
 
 .main__fourth-features {
-  @include section(row, stretch, 128px 20px, $background-color-dark, $font-color-dark, center);
+  @include section(row, stretch, 128px 20px, $background-color-light, $font-color-dark, center);
 }
 .main__fourth-features-container {
   @include container(0, column, center);
@@ -311,6 +312,8 @@
 }
 .main__fifth-text {
   margin-top: 16px;
+  color: $font-color-dark;
+  opacity: $opacity;
 }
 .main__fifth-right {
   @include size(843px, 250px);
@@ -522,6 +525,7 @@
   cursor: pointer;
   margin-left: auto;
   transition: all .4s;
+  transform: rotate(0);
 }
 .main__sixth-right-list-item-icon:hover {
   transform: rotate(45deg);
@@ -561,7 +565,7 @@
 }
 .main__seventh-left-text {
   font-weight: 500;
-  color: rgba(255, 255, 255, 80%);
+  color: $font-color-light;
 }
 .main__seventh-right {
   @include size(624px, 691px);
@@ -597,7 +601,7 @@
   font-weight: 500;
 }
 .main__seventh-right-form input::placeholder {
-  color: rgba(244, 246, 252, 60%);
+  color: rgba(244, 246, 252, 50%);
   font-weight: 300;
 }
 .main__seventh-right-form-input-name {
@@ -667,9 +671,10 @@
   max-width: 100%;
 }
 .main__eight-our-blog-list-item-date {
-  margin-top: 40px;
-  color: $font-color-links;
-  font-weight: 500;
+  margin-top: 32px;
+  color: $font-color-dark;
+  opacity: $opacity;
+  font-weight: 600;
 }
 .main__eight-our-blog-list-item-sub-header {
   margin-top: 16px;
@@ -680,13 +685,16 @@
 }
 .main__eight-our-blog-list-item-text {
   margin-top: 16px;
-  color: $font-color-links;
+  color: $font-color-dark;
+  opacity: $opacity;
 }
 .main__eight-our-blog-list-item-link {
   margin-top: 32px;
 }
 .main__eight-our-blog-list-item-link span {
   margin-right: 16px;
+  font-weight: 500;
+  color: $font-color-dark;
 }
 .main__eight-our-blog-list-item-link path {
   fill: $font-color-dark;

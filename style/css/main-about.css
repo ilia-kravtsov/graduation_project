@@ -22,7 +22,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 20px 0 20px;
   background-color: #FFFFFF;
   color: #282938;
 }
@@ -72,6 +72,17 @@
   min-height: auto;
   margin-top: 31px;
   opacity: 70%;
+}
+
+.main-about__hero-content-right-image-container {
+  max-width: 547px;
+  width: 100%;
+  min-height: 336px;
+}
+
+.main-about__hero-image {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* =========================== main-about__hero ends =========================== */
@@ -428,7 +439,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 32px 48px 48px;
-  background-color: #F4F6FC;
+  background-color: #f4f6fc;
 }
 
 .main-about__fifth-benefits-list-item-icon {
@@ -503,7 +514,7 @@
           justify-content: center;
   width: 100%;
   padding: 128px 0;
-  background-color: #F4F6FC;
+  background-color: #f4f6fc;
   color: #282938;
 }
 
@@ -610,3 +621,52 @@
 }
 
 /* =========================== main-about__sixth-team ends =========================== */
+@media (max-width: 1100px) {
+  .main-about__hero-container {
+    gap: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-about__hero-title {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-about__hero {
+    padding-top: 60px;
+  }
+  .main-about__hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-about__hero-content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .main-about__hero {
+    padding: 60px 10px 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-about__hero-title {
+    font-size: 32px;
+    line-height: 54px;
+  }
+}
