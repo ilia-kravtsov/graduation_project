@@ -144,6 +144,10 @@
 .main-features__support-right-image {
 }
 
+.main-features__support_padding {
+  padding-top: 128px;
+}
+
 /* ________________________________ main-features__support ends ________________________________ */
 
 /* ________________________________ main-features__guarantee starts ____________________________ */
@@ -177,6 +181,10 @@
 }
 .main-features__guarantee-text {
   opacity: $opacity;
+}
+
+.main-features__guarantee_background {
+  background-color: rgba(252, 217, 128, 10%);
 }
 
 /* ________________________________ main-features__guarantee ends _______________________________ */
@@ -217,6 +225,10 @@
   }
   .main-features__maintenance {
     padding: 60px 10px;
+  }
+
+  .main-features__support_padding {
+    padding-top: 60px;
   }
 }
 @media (max-width: 400px) {
