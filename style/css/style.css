@@ -3735,7 +3735,7 @@ address {
   width: 100%;
   background-color: #f4f6fc;
   color: #282938;
-  padding: 128px 0;
+  padding: 128px 20px;
 }
 
 .main-features__maintenance-container {
@@ -3763,6 +3763,10 @@ address {
   min-height: 398px;
 }
 
+.main-features__maintenance-left-image {
+  max-width: 100%;
+}
+
 .main-features__maintenance-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3781,6 +3785,9 @@ address {
 }
 
 .main-features__maintenance-title {
+  max-width: 624px;
+  width: 100%;
+  min-height: 112px;
   font-weight: 600;
   font-size: 38px;
   line-height: 56px;
@@ -3788,6 +3795,9 @@ address {
 
 .main-features__maintenance-text {
   opacity: 70%;
+  max-width: 622px;
+  width: 100%;
+  min-height: 84px;
 }
 
 /* ________________________________ main-features__maintenance ends ______________________________ */
@@ -3940,6 +3950,11 @@ address {
 }
 
 /* ________________________________ main-features__guarantee ends _______________________________ */
+@media (max-width: 1300px) {
+  .main-features__maintenance-left {
+    min-height: auto;
+  }
+}
 @media (max-width: 1000px) {
   .main__hero-left_align-center {
     -webkit-box-align: center;
@@ -3965,16 +3980,35 @@ address {
     max-width: 700px;
     min-height: auto;
   }
+  .main-features__maintenance-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .main-features__client-list {
     padding: 0 10px 60px 10px;
+  }
+  .main-features__maintenance {
+    padding: 60px 10px;
   }
 }
 @media (max-width: 400px) {
   .main-features__client-list-title {
     font-size: 32px;
     line-height: 46px;
+  }
+  .main-features__maintenance-title {
+    font-size: 32px;
+    line-height: 46px;
+    min-height: auto;
   }
 }
 /* ________________________________ main-work__hero starts ________________________________ */
