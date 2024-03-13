@@ -3021,7 +3021,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 10px;
   background-color: #f4f6fc;
   color: #282938;
 }
@@ -3133,7 +3133,6 @@ address {
   .main-about__second-introducing-content-bottom-image-container {
     min-height: auto;
   }
-  /* third */
   .main-about__third-processes-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -3151,6 +3150,14 @@ address {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 60px;
+  }
+  .main-about__sixth-team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
 }
 @media (max-width: 1100px) {
@@ -3279,6 +3286,9 @@ address {
   .main-about__fifth-benefits-container {
     gap: 38px;
   }
+  .main-about__sixth-team {
+    padding: 60px 10px 80px 10px;
+  }
 }
 @media (max-width: 700px) {
   /* third */
@@ -3362,6 +3372,13 @@ address {
     line-height: 54px;
     text-align: center;
     min-height: auto;
+  }
+  .main-about__sixth-team-list-item {
+    padding: 30px 40px;
+  }
+  .main-about__sixth-team-title {
+    font-size: 35px;
+    line-height: 54px;
   }
 }
 .main-pricing {
