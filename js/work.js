@@ -4,26 +4,26 @@ const templates = document.querySelectorAll('.main-work__hero-content-templates-
 if (buttons && templates) {
   buttons.forEach(function(button, index) {
     button.addEventListener('click', function() {
-      // Remove the active class from all buttons
+      // Удаляю активный класс со всех кнопок
       buttons.forEach(function(btn) {
         btn.classList.remove('--main-work__hero-content-buttons-list-active');
       });
   
-      // Add the active class to the clicked button
+      // Добавляю активный класс к нажатой кнопке
       this.classList.add('--main-work__hero-content-buttons-list-active');
   
-      // Show or hide the corresponding content based on the button clicked
+      // Показываю или скрываю контент в зависимости от нажатой кнопки
       templates.forEach(function(template) {
         template.style.display = 'none';
       });
   
       if (index === 0) {
-        // Show all templates if "All" button is clicked
+        // Показываю все шаблоны при нажатии кнопки 'All'
         templates.forEach(function(template) {
           template.style.display = 'block';
         });
       } else {
-        // Show only the templates that match the button's data attribute value
+        // Показываю только нужный шаблон при нажатии одной из кнопок 
         const templateToShow = document.querySelectorAll(`.main-work__hero-content-templates-item--${button.textContent.toLowerCase().replace(' ', '-')}`);
         templateToShow.forEach(function(template) {
           template.style.display = 'block';
