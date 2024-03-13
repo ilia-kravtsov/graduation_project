@@ -913,12 +913,6 @@
           transform: rotate(0);
 }
 
-.main__sixth-right-list-item-icon:hover {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .--accordion-active {
   opacity: 87%;
   visibility: visible;
