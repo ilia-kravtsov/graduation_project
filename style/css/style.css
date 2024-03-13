@@ -2759,7 +2759,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 20px;
   background-color: #EEF4FA;
   color: #282938;
 }
@@ -2827,6 +2827,10 @@ address {
   min-height: 336px;
 }
 
+.main-about__fourth-mission-top-box-right-image {
+  max-width: 100%;
+}
+
 .main-about__fourth-mission-bottom-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2841,6 +2845,10 @@ address {
   max-width: 514px;
   width: 100%;
   min-height: 334px;
+}
+
+.main-about__fourth-mission-bottom-box-left-image {
+  max-width: 100%;
 }
 
 .main-about__fourth-mission-bottom-box-right {
@@ -3143,6 +3151,15 @@ address {
   .main-about__second-introducing-content-container {
     padding: 60px 80px 60px 60px;
   }
+  /* fourth */
+  .main-about__fourth-mission-top-box,
+  .main-about__fourth-mission-bottom-box {
+    gap: 60px;
+  }
+  .main-about__fourth-mission-bottom-box-left,
+  .main-about__fourth-mission-top-box-right {
+    min-height: auto;
+  }
 }
 @media (max-width: 1000px) {
   .main-about__hero {
@@ -3192,6 +3209,30 @@ address {
   .main-about__third-processes-container {
     gap: 0;
   }
+  /* fourth */
+  .main-about__fourth-mission-top-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main-about__fourth-mission {
+    padding: 60px 20px;
+  }
+  .main-about__fourth-mission-bottom-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main-about__fourth-mission-container {
+    gap: 60px;
+  }
 }
 @media (max-width: 700px) {
   /* third */
@@ -3232,6 +3273,10 @@ address {
     font-size: 32px;
     line-height: 54px;
   }
+  /* fourth */
+  .main-about__fourth-mission {
+    padding: 60px 10px;
+  }
 }
 @media (max-width: 500px) {
   .main-about__hero-content-right-image-container {
@@ -3255,10 +3300,18 @@ address {
   }
   /* third */
   .main-about__third-processes-title {
-    font-weight: 600;
     font-size: 28px;
     line-height: 44px;
     text-align: center;
+  }
+  /* fourth */
+  .main-about__fourth-mission-top-box-left-title {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .main-about__fourth-mission-bottom-box-right-title {
+    font-size: 28px;
+    line-height: 46px;
   }
 }
 .main-pricing {
