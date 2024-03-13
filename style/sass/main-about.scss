@@ -230,7 +230,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 128px 0;
+  padding: 128px 10px;
   background-color: $background-color-light;
   color: $font-color-dark;
 }
@@ -246,9 +246,11 @@
 }
 .main-about__fifth-benefits-list {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 .main-about__fifth-benefits-list-item {
+  @include size(405px, 316px);
   display: flex;
   flex-direction: column;
   padding: 50px 32px 48px 48px;
@@ -271,6 +273,7 @@
 .main-about__fifth-partners-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 90px;
 }
 .main-about__fifth-users-container {
@@ -396,10 +399,20 @@
   .main-about__third-processes {
     padding: 60px 20px;
   }
+  .main-about__fifth-partners-container {
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 @media (max-width: 1100px) {
   .main-about__hero-container {
     gap: 60px;
+  }
+  .main-about__fifth-benefits-list-item {
+    padding: 30px 20px 20px 32px;
+  }
+  .main-about__fifth-benefits-list {
+    gap: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -411,7 +424,6 @@
     padding: 60px 80px 60px 60px;
   }
 
-  /* fourth */
   .main-about__fourth-mission-top-box,
   .main-about__fourth-mission-bottom-box {
     gap: 60px;
@@ -420,6 +432,15 @@
   .main-about__fourth-mission-bottom-box-left,
   .main-about__fourth-mission-top-box-right {
     min-height: auto;
+  }
+
+  .main-about__fifth-benefits-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-about__fifth-benefits-list-item {
+    text-align: center;
+    align-items: center;
   }
 }
 @media (max-width: 1000px) {
@@ -435,6 +456,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .main-about__fifth-partners-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media (max-width: 800px) {
@@ -470,6 +496,12 @@
   }
   .main-about__fourth-mission-container {
     gap: 60px;
+  }
+  .main-about__fifth-benefits {
+    padding: 60px 10px;
+  }
+  .main-about__fifth-benefits-container {
+    gap: 38px;
   }
 }
 @media (max-width: 700px) {
@@ -538,14 +570,12 @@
     padding: 20px 40px 20px 20px;
   }
 
-  /* third */
   .main-about__third-processes-title {
     font-size: 28px;
     line-height: 44px;
     text-align: center;
   }
 
-  /* fourth */
   .main-about__fourth-mission-top-box-left-title {
     font-size: 28px;
     line-height: 46px;
@@ -553,5 +583,12 @@
   .main-about__fourth-mission-bottom-box-right-title {
     font-size: 28px;
     line-height: 46px;
+  }
+
+  .main-about__fifth-benefits-title {
+    font-size: 32px;
+    line-height: 54px;
+    text-align: center;
+    min-height: auto;
   }
 }
