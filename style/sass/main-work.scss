@@ -1,9 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
-/* ________________________________ main-work__hero starts ________________________________ */
 .main-work__hero {
-  @include section(column, center, 96px 0);
+  @include section(column, center, 96px 10px);
 }
 .main-work__hero-container {
   @include container(0, column, center);
@@ -145,6 +144,20 @@
   margin-top: 20px;
 }
 
-
-
-/* ________________________________ main-work__hero ends ________________________________ */
+/* ________________________________ media queries start ________________________________ */
+@media (max-width: 500px) {
+  .main-work__hero {
+    padding: 60px 10px;
+  }
+  .main-work__hero-title {
+    font-size: 38px;
+    line-height: 54px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .main-work__hero-title {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
