@@ -20,13 +20,13 @@ if (buttons && templates) {
       if (index === 0) {
         // Показываю все шаблоны при нажатии кнопки 'All'
         templates.forEach(function(template) {
-          template.style.display = 'block';
+          template.style.display = 'flex';
         });
       } else {
         // Показываю только нужный шаблон при нажатии одной из кнопок 
         const templateToShow = document.querySelectorAll(`.main-work__hero-content-templates-item--${button.textContent.toLowerCase().replace(' ', '-')}`);
         templateToShow.forEach(function(template) {
-          template.style.display = 'block';
+          template.style.display = 'flex';
         });
       }
     });
