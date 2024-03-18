@@ -139,7 +139,7 @@
   fill: $font-color-dark;
 }
 .main-work__hero__bottom {
-  @include section(column, center, 128px 0, $background-color-light, $font-color-dark);
+  @include section(column, center, 0 10px 128px 10px, $background-color-light, $font-color-dark);
   text-align: center;
 }
 .main-work__hero__bottom-container {
@@ -198,6 +198,11 @@
   .main-work__hero-content-template-image-container {
     min-height: 300px;
   }
+
+  .main-work__hero__bottom {
+    padding-bottom: 60px;
+  }
+
 }
 @media (max-width: 400px) {
   .main-work__hero-title {
@@ -215,5 +220,20 @@
 
   .main-work__hero-content-template-image-container {
     min-height: 250px;
+  }
+
+  .main-work__hero-content-template-title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .main-work__hero__bottom-title {
+    font-size: 38px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 350px) {
+  .main-work__hero-content-template-image-container {
+    min-height: 200px;
   }
 }

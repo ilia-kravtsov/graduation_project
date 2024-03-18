@@ -73,3 +73,8 @@
   font-weight: 500;
   color: $accent-color-dark;
 }
+@media (max-width: 500px) {
+  .main-work__hero-content-template-link {
+    margin-top: 12px; 
+  }
+}
