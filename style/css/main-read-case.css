@@ -5,7 +5,7 @@
   width: 100%;
   background-color: #FFFFFF;
   color: #282938;
-  padding: 128px 0;
+  padding: 128px 10px;
   justify-content: initial;
   padding-bottom: 0;
 }
@@ -161,6 +161,7 @@
   margin-top: 111px;
   border-top: 1px solid rgba(40, 41, 56, 0.2);
   border-bottom: 1px solid rgba(40, 41, 56, 0.2);
+  margin-bottom: 128px;
 }
 
 .main__read-case-studies-hero-link {
@@ -175,4 +176,11 @@
   font-size: 24px;
   line-height: 36px;
   opacity: 100%;
+}
+
+@media (max-width: 400px) {
+  .main__read-case-studies-hero-title {
+    font-size: 38px;
+    line-height: 54px;
+  }
 }/*# sourceMappingURL=main-read-case.css.map */

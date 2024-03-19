@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .main__read-case-studies {
-  @include section(column, center, 128px 0, $background-color-light);
+  @include section(column, center, 128px 10px, $background-color-light);
   padding-bottom: 0;
 }
 .main__read-case-studies-hero {
@@ -106,6 +106,7 @@
   margin-top: 111px;
   border-top: 1px solid rgba(40, 41, 56,20%);
   border-bottom: 1px solid rgba(40, 41, 56,20%);
+  margin-bottom: 128px;
 }
 .main__read-case-studies-hero-link-item {
 }
@@ -136,3 +137,9 @@
 .button {
 }
 
+@media (max-width: 400px) {
+  .main__read-case-studies-hero-title {
+    font-size: 38px;
+    line-height: 54px;
+  }
+}
