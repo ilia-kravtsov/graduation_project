@@ -173,7 +173,7 @@
   }
   .main__read-case-studies-hero-list {
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: space-between; 
     gap: 20px 30px;
   }
 }
@@ -216,9 +216,6 @@
 @media (max-width: 500px) {
   .main__read-case-studies-hero-image-container {
     min-height: 260px;
-  }
-  .main__read-case-studies-hero-list {
-    justify-content: space-between;
   }
 }
 @media (max-width: 400px) {

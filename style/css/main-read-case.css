@@ -269,9 +269,9 @@
   .main__read-case-studies-hero-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 20px 30px;
   }
 }
@@ -314,11 +314,6 @@
 @media (max-width: 500px) {
   .main__read-case-studies-hero-image-container, .main__read-case-studies-hero-image-container-2 {
     min-height: 260px;
-  }
-  .main__read-case-studies-hero-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media (max-width: 400px) {
