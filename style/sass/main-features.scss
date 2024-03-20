@@ -1,0 +1,245 @@
+@import 'variables';
+@import 'mixins';
+
+.main-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $background-color-light;
+  color: $font-color-light;
+}
+
+/* ________________________________ main hero modificators start ______________________________ */
+
+.main__hero-header--width {
+  @include size(468px, 148px);
+}
+.--margin {
+  margin-top: 32px;
+}
+.main__hero-right--width {
+  @include size(639px, 409px);
+}
+
+/* ________________________________ main hero modificators end ________________________________ */
+
+/* ________________________________ main-features__client-list starts _________________________ */
+
+.main-features__client-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $background-color-light;
+  color: $font-color-dark;
+  padding: 0 20px 128px 20px;
+}
+.main-features__client-list-container {
+  @include container(81px);
+}
+.main-features__client-list-left {
+  @include size(624px, 316px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-features__client-list-pre-title {
+  color: $font-color-dark-2;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.main-features__client-list-title {
+  color: $font-color-dark-2;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+}
+.main-features__client-list-text {
+  color: $font-color-dark;
+  opacity: $opacity;
+}
+.main-features__client-list-right {
+  @include size(575px, 398px);
+}
+.main-features__client-list-right-image {
+  max-width: 100%;
+}
+
+/* ________________________________ main-features__client-list end _______________________________ */
+
+/* ________________________________ main-features__maintenance starts ____________________________ */
+
+.main-features__maintenance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: $background-color-dark;
+  color: $font-color-dark;
+  padding: 128px 20px;
+}
+.main-features__maintenance-container {
+  @include container(80px, row, center);
+}
+.main-features__maintenance-left {
+  @include size(575px, 398px);
+}
+.main-features__maintenance-left-image {
+  max-width: 100%;
+}
+.main-features__maintenance-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-features__maintenance-pre-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+.main-features__maintenance-title {
+  @include size(624px, 112px);
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-features__maintenance-text {
+  opacity: $opacity;
+  @include size(622px, 84px);
+}
+
+/* ________________________________ main-features__maintenance ends ______________________________ */
+
+/* ________________________________ main-features__support starts ________________________________ */
+
+.main-features__support {
+  @include section(column, center);
+}
+.main-features__support-container {
+  @include container(80px, row, center);
+}
+.main-features__support-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-features__support-pre-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+.main-features__support-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-features__support-text {
+  opacity: $opacity;
+}
+.main-features__support-right {
+  @include size(575px, 398px);
+}
+.main-features__support-right-image {
+}
+
+.main-features__support_padding {
+  padding-top: 128px;
+}
+
+/* ________________________________ main-features__support ends ________________________________ */
+
+/* ________________________________ main-features__guarantee starts ____________________________ */
+
+.main-features__guarantee {
+  @include section(column, center);
+  background-color: rgba(252, 217, 128, 10%);
+}
+.main-features__guarantee-container {
+  @include container(80px, row, center);
+}
+.main-features__guarantee-left {
+  @include size(575px, 398px);
+}
+.main-features__guarantee-left-image {
+}
+.main-features__guarantee-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-features__guarantee-pre-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+.main-features__guarantee-title {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+}
+.main-features__guarantee-text {
+  opacity: $opacity;
+}
+
+.main-features__guarantee_background {
+  background-color: rgba(252, 217, 128, 10%);
+}
+
+/* ________________________________ main-features__guarantee ends _______________________________ */
+@media (max-width: 1300px) {
+  .main-features__maintenance-left {
+    min-height: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .main__hero-left_align-center {
+    align-items: center;
+  }
+  .main-features__client-list-container {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-features__client-list-left {
+    max-width: 700px;
+    min-height: auto; 
+  }
+  .main-features__client-list-right {
+    max-width: 700px;
+    min-height: auto; 
+  }
+
+  .main-features__maintenance-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .main-features__client-list {
+    padding: 0 10px 60px 10px;
+  }
+  .main-features__maintenance {
+    padding: 60px 10px;
+  }
+
+  .main-features__support_padding {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .main-features__client-list-title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .main-features__maintenance-title {
+    font-size: 32px;
+    line-height: 46px;
+    min-height: auto;
+  }
+}
