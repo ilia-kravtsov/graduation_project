@@ -36,6 +36,7 @@
   flex-wrap: wrap;
   transition: $transition;
 }
+
 /* =========================== burger starts ========================== */
 .burger-icon {
   display: none;
@@ -70,6 +71,7 @@
   bottom: -8px;
 }
 /* =========================== burger ends ========================== */
+
 .header__nav-link--contact {
   @include size(185px, 60px);
   padding: 16px 48px;
@@ -86,6 +88,7 @@
 .header__nav-link_accent-color {
   color: $font-color-light;
 }
+
 /* =========================== media starts ========================== */
 @media (max-width: 900px) {
   .header__nav-list {

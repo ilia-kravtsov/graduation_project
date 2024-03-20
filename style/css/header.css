@@ -41,7 +41,7 @@
   max-width: 122px;
 }
 
-.header__logo img {
+.header__img {
   max-height: 100%;
   max-width: 100%;
 }
@@ -182,7 +182,7 @@
     width: 220px;
     height: 110px;
   }
-  .header__logo img {
+  .header__img {
     height: 100%;
     width: 100%;
   }
@@ -191,10 +191,6 @@
   .header__logo {
     width: 260px;
     height: 130px;
-  }
-  .header__logo img {
-    height: 100%;
-    width: 100%;
   }
 }
 /* =========================== menu opener ========================== */

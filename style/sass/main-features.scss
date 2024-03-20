@@ -141,9 +141,6 @@
 .main-features__support-right {
   @include size(575px, 398px);
 }
-.main-features__support-right-image {
-}
-
 .main-features__support_padding {
   padding-top: 128px;
 }
@@ -161,8 +158,6 @@
 }
 .main-features__guarantee-left {
   @include size(575px, 398px);
-}
-.main-features__guarantee-left-image {
 }
 .main-features__guarantee-right {
   display: flex;
@@ -182,7 +177,6 @@
 .main-features__guarantee-text {
   opacity: $opacity;
 }
-
 .main-features__guarantee_background {
   background-color: rgba(252, 217, 128, 10%);
 }

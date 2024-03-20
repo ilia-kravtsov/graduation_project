@@ -22,10 +22,6 @@
 .footer__left {
   @include size(517px, auto)
 }
-.footer__left-logo {
-}
-.footer__left-logo-image {
-}
 .footer__left-text {
   font-weight: 500;
   color: #ffffffcc;
@@ -87,12 +83,6 @@
   display: flex;
   gap: 26px;
 }
-.footer__right-list-item {
-}
-.footer__right-list-link {
-}
-.footer__right-list-link-image {
-}
 .footer__bottom {
   width: 100%;
   display: flex;
@@ -121,6 +111,7 @@
   color: $font-color-dark;
 }
 
+/* _______________________ media ________________________ */
 @media (max-width: 1000px) {
   .footer__top {
     gap: 60px;

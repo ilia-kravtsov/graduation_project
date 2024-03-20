@@ -17,13 +17,7 @@ $justify: initial
   justify-content: $justify;
 }
 
-@mixin container(
-  $gap: 0, 
-  $direction: row, 
-  $align: stretch,
-  $justify: initial
-) 
-{
+@mixin container($gap: 0, $direction: row, $align: stretch,$justify: initial) {
   max-width: 1280px;
   width: 100%;
   display: flex;
@@ -46,13 +40,7 @@ $justify: initial
   min-height: $height;
 }
 
-@mixin title (
-  $font-size: 48px, 
-  $font-weight: 600, 
-  $line-height: 64px,
-  $align: center,
-) 
-{
+@mixin title ($font-size: 48px, $font-weight: 600, $line-height: 64px,$align: center,) {
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;

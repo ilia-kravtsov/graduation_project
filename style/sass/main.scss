@@ -146,8 +146,6 @@
   font-size: 48px;
   line-height: 64px;
 }
-.main__third-link {
-}
 .main__third-link span {
   font-weight: 500;
   color: $font-color-dark;
@@ -325,10 +323,6 @@
   @include size(843px, 250px);
   position: relative;
 }
-.main__fifth-quote-person {
-  
-}
-.main__fifth-quote-wrapper {}
 .main__fifth-quote-text {
   font-weight: 500;
   font-size: 32px;
@@ -600,9 +594,6 @@
 .main__seventh-right-form input::placeholder {
   color: rgba(244, 246, 252, 50%);
   font-weight: 300;
-}
-.main__seventh-right-form-input-name {
-
 }
 .main__seventh-right-form-input-email {
   margin-top: 16px;

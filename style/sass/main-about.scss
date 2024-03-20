@@ -118,7 +118,6 @@
 }
 .main-about__third-processes-container {
   @include container(0, column, center);
-
 }
 .main-about__third-processes-title {
   font-weight: 600;
@@ -171,10 +170,10 @@
   gap: 140px;
 }
 .main-about__fourth-mission-top-box-left {
+  @include size(623px, auto);
   display: flex;
   flex-direction: column;
   gap: 16px;
-  @include size(623px, auto);
 }
 .main-about__fourth-mission-top-box-pre-title {
   font-weight: 500;
@@ -296,11 +295,6 @@
   @include size(137px, 32px);
   opacity: 80%;
 }
-.main-about__fifth-partners-list-item-link {
-}
-.main-about__fifth-partners-list-item-image {
-}
-
 /* =========================== main-about__fifth-benefits ends =========================== */
 
 /* =========================== main-about__sixth-team starts =========================== */
@@ -335,8 +329,6 @@
 .main-about__sixth-team-list-item-image-container {
   position: relative;
 }
-.main-about__sixth-team-list-item-image {
-}
 .main-about__sixth-team-list-item-image-gradient {
   opacity: 0;
   position: absolute;
@@ -359,12 +351,7 @@
   opacity: 1;
 }
 .main-about__sixth-team-list-item-image-container:hover .main-about__sixth-team-list-item-image-social-list {
-
   opacity: 1;
-}
-.main-about__sixth-team-list-item-image-social-list-item {
-}
-.main-about__sixth-team-list-item-image-social-list-item-link {
 }
 .main-about__sixth-team-list-item-image-social-list-item-image {
   width: 13px;

@@ -311,6 +311,9 @@
 }
 
 .main-about__fourth-mission-top-box-left {
+  max-width: 623px;
+  width: 100%;
+  min-height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,9 +322,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
-  max-width: 623px;
-  width: 100%;
-  min-height: auto;
 }
 
 .main-about__fourth-mission-top-box-pre-title {
