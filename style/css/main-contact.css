@@ -1,22 +1,40 @@
 .main-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: #FFFFFF;
   color: #282938;
   padding: 128px 0;
-  justify-content: initial;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-contact__container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0;
-  align-items: center;
-  justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-contact__title {
@@ -59,7 +77,40 @@
   font-weight: 500;
 }
 
+.main-contact__form input::-webkit-input-placeholder, .main-contact__form textarea::-webkit-input-placeholder {
+  color: #1B1C2B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 80%;
+}
+
 .main-contact__form input::-moz-placeholder, .main-contact__form textarea::-moz-placeholder {
+  color: #1B1C2B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 80%;
+}
+
+.main-contact__form input:-ms-input-placeholder, .main-contact__form textarea:-ms-input-placeholder {
+  color: #1B1C2B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 80%;
+}
+
+.main-contact__form input::-ms-input-placeholder, .main-contact__form textarea::-ms-input-placeholder {
   color: #1B1C2B;
   font-family: Poppins;
   font-size: 16px;
@@ -87,8 +138,13 @@
 }
 
 .main-contact__form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-contact__form-label-text {
@@ -120,4 +176,4 @@
   font-weight: 600;
   line-height: 32px;
   cursor: pointer;
-}/*# sourceMappingURL=main-contact.css.map */
+}

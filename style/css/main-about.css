@@ -1,15 +1,26 @@
 .main-about {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #BBBBCB;
 }
 
 /* =========================== main-about__hero starts =========================== */
 .main-about__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 20px 0 20px;
   background-color: #FFFFFF;
@@ -19,11 +30,20 @@
 .main-about__hero-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 138px;
-  align-items: stretch;
-  justify-content: initial;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__hero-content-left {
@@ -68,8 +88,12 @@
 /* =========================== main-about__hero ends =========================== */
 /* =========================== main-about__second-introducing starts =========================== */
 .main-about__second-introducing {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 20px 0 20px;
   background-color: #FFFFFF;
@@ -79,23 +103,42 @@
 .main-about__second-introducing-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0;
-  align-items: stretch;
-  justify-content: initial;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__second-introducing-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 80px 110px 80px 80px;
   background-color: #F4F5F5;
 }
 
 .main-about__second-introducing-content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-about__second-introducing-content-left-pre-title {
@@ -104,6 +147,8 @@
 }
 
 .main-about__second-introducing-content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 60px;
 }
@@ -122,8 +167,13 @@
 }
 
 .main-about__second-introducing-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-about__second-introducing-content-bottom-image-container {
@@ -139,8 +189,12 @@
 /* =========================== main-about__second-introducing ends =========================== */
 /* =========================== main-about__third-processes starts =========================== */
 .main-about__third-processes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 20px;
   background-color: #FFFFFF;
@@ -150,11 +204,20 @@
 .main-about__third-processes-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0;
-  align-items: center;
-  justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__third-processes-title {
@@ -164,6 +227,8 @@
 }
 
 .main-about__third-processes-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 56px;
   margin-top: 48px;
@@ -173,11 +238,18 @@
   max-width: 272px;
   width: 100%;
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-about__third-processes-list-item-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -197,8 +269,12 @@
 /* =========================== main-about__third-processes ends =========================== */
 /* =========================== main-about__fourth-mission starts =========================== */
 .main-about__fourth-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 20px;
   background-color: #EEF4FA;
@@ -208,22 +284,40 @@
 .main-about__fourth-mission-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 96px;
-  align-items: stretch;
-  justify-content: initial;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__fourth-mission-top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 140px;
 }
 
 .main-about__fourth-mission-top-box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
   max-width: 623px;
   width: 100%;
@@ -255,9 +349,13 @@
 }
 
 .main-about__fourth-mission-bottom-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 140px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-about__fourth-mission-bottom-box-left {
@@ -274,8 +372,13 @@
   max-width: 623px;
   width: 100%;
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
 }
 
@@ -296,8 +399,12 @@
 /* =========================== main-about__fourth-mission ends =========================== */
 /* =========================== main-about__fifth-benefits starts =========================== */
 .main-about__fifth-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 10px;
   background-color: #FFFFFF;
@@ -307,11 +414,20 @@
 .main-about__fifth-benefits-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 48px;
-  align-items: center;
-  justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__fifth-benefits-title {
@@ -325,8 +441,12 @@
 }
 
 .main-about__fifth-benefits-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 32px;
 }
 
@@ -334,8 +454,13 @@
   max-width: 405px;
   width: 100%;
   min-height: 316px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 50px 32px 48px 48px;
   background-color: #f4f6fc;
 }
@@ -358,15 +483,25 @@
 }
 
 .main-about__fifth-partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 90px;
 }
 
 .main-about__fifth-users-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-about__fifth-users-number {
@@ -380,6 +515,8 @@
 }
 
 .main-about__fifth-partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 60px;
 }
@@ -394,8 +531,12 @@
 /* =========================== main-about__fifth-benefits ends =========================== */
 /* =========================== main-about__sixth-team starts =========================== */
 .main-about__sixth-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 128px 10px;
   background-color: #f4f6fc;
@@ -405,11 +546,20 @@
 .main-about__sixth-team-container {
   max-width: 1280px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 48px;
-  align-items: center;
-  justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 .main-about__sixth-team-title {
@@ -419,6 +569,8 @@
 }
 
 .main-about__sixth-team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
 }
@@ -426,9 +578,16 @@
 .main-about__sixth-team-list-item {
   background-color: #FFFFFF;
   padding: 48px 64px 32px 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-about__sixth-team-list-item-image-container {
@@ -438,9 +597,11 @@
 .main-about__sixth-team-list-item-image-gradient {
   opacity: 0;
   position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#5239FA));
   background: linear-gradient(to bottom, transparent, #5239FA 100%);
   top: 0;
   border-radius: 50%;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   max-width: 168px;
   width: 100%;
@@ -449,11 +610,14 @@
 
 .main-about__sixth-team-list-item-image-social-list {
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   gap: 12px;
   bottom: 12px;
   left: 55px;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -498,12 +662,18 @@
     padding: 60px 20px;
   }
   .main-about__fifth-partners-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 60px;
   }
   .main-about__sixth-team-list {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
   }
 }
@@ -535,12 +705,17 @@
     min-height: auto;
   }
   .main-about__fifth-benefits-list {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-about__fifth-benefits-list-item {
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 1000px) {
@@ -548,18 +723,33 @@
     padding-top: 60px;
   }
   .main-about__hero-container {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-about__hero-content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .main-about__fifth-partners-list {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 800px) {
@@ -567,8 +757,13 @@
     text-align: center;
   }
   .main-about__second-introducing-content-box {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .main-about__second-introducing-content-box {
@@ -580,15 +775,23 @@
   }
   /* fourth */
   .main-about__fourth-mission-top-box {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
   .main-about__fourth-mission {
     padding: 60px 20px;
   }
   .main-about__fourth-mission-bottom-box {
-    flex-direction: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   .main-about__fourth-mission-container {
@@ -619,7 +822,9 @@
     gap: 40px;
   }
   .main-about__third-processes-list-item {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
 }
@@ -692,4 +897,4 @@
     font-size: 35px;
     line-height: 54px;
   }
-}/*# sourceMappingURL=main-about.css.map */
+}
