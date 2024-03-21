@@ -12,3 +12,4 @@ if (burgerIcon) {
         navList.classList.add('header__nav-list_mobile')
       }
 })}
+

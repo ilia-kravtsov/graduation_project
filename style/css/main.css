@@ -704,6 +704,12 @@
   transition: all 0.4s;
 }
 
+.main__fifth-buttons-container-arrow-left svg path,
+.main__fifth-buttons-container-arrow-right svg path {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .main__fifth-buttons-container-arrow-right svg {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -742,12 +748,6 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #5239FA;
-  color: #FFFFFF;
-}
-
-.swiper-button-prev:focus,
-.swiper-button-next:focus {
   background-color: #5239FA;
   color: #FFFFFF;
 }
@@ -906,11 +906,20 @@
   height: 16px;
   cursor: pointer;
   margin-left: auto;
+  position: relative;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
+}
+
+.main__sixth-right-list-item-button {
+  margin-left: auto;
+  padding: 10px 0 10px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .--accordion-active {

@@ -43,7 +43,14 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
+  padding: 10px;
   background-color: transparent;
+  position: relative;
+}
+.burger-icon::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
 }
 .burger-icon span,
 .burger-icon span::before,

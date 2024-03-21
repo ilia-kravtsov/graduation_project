@@ -396,6 +396,10 @@
   cursor: pointer;
   transition: $transition;
 }
+.main__fifth-buttons-container-arrow-left svg path,
+.main__fifth-buttons-container-arrow-right svg path {
+  transition: $transition;
+}
 .main__fifth-buttons-container-arrow-right svg {
   transform: rotate(180deg);
 }
@@ -427,12 +431,6 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: $fill-color;
-  color: $font-color-light;
-}
-
-.swiper-button-prev:focus,
-.swiper-button-next:focus {
   background-color: $fill-color;
   color: $font-color-light;
 }
@@ -518,8 +516,16 @@
   height: 16px;
   cursor: pointer;
   margin-left: auto;
-  transition: all .4s;
+  position: relative;
+  transition: $transition;
   transform: rotate(0);
+}
+.main__sixth-right-list-item-button {
+  margin-left: auto;
+  padding: 10px 0 10px 10px; 
+  background: none; 
+  border: none; 
+  cursor: pointer;
 }
 .--accordion-active {
   opacity: 87%;
