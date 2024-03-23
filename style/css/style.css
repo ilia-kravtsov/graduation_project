@@ -1168,6 +1168,7 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 
 .main__sixth-right-list-item-number {
